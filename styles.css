@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header{
+    padding: 30px;
+    background-color: #93BFCF;
+    width: 100vw;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: #BDCDD6;
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-weight: bolder;
+
+}
+
+.nav a:hover{
+    background-color: #6096B4;
+    transition: 500ms;
+}
+
+.row{
+    background-color: #EEE9DA;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+
+.leftrow a{
+    padding: 15px;
+    height: 100%;
+    display: block; 
+    text-decoration: none;  
+}
+
+.leftrow{
+    display: block;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.rightrow{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.laptop{
+    display: flex;
+    flex-direction: row;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+.tv{
+    display: flex;
+    flex-direction: row;
+}
+
+.card1{
+    background-color: #BDCDD6;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.card{
+    background-color: #BDCDD6;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: #6096B4;
+}
