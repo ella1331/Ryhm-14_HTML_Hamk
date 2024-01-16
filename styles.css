@@ -4,13 +4,13 @@
 
 body{
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #93BFCF;
 }
 
 .header{
     padding: 30px;
     background-color: #93BFCF;
     width: 100vw;
-    
 }
 
 .nav{
@@ -34,11 +34,12 @@ body{
 }
 
 .row{
-    background-color: #EEE9DA;
+    background-color: white;
     display: flex;
-    flex-direction: row; /*muutin tätä*/
+    flex-direction: row; 
     width: 100vw;
-    align-items: flex-start; /* ja tätä*/
+    align-items: flex-start; 
+
 }
 
 .leftrow a{
@@ -51,11 +52,12 @@ body{
 .leftrow{
     text-align: left;
     width: 100%;
-    align-self: stretch; /* lisäsin myös tämän, että molemmat puolet olisivat yhtä isoja, koska meillä on tekstiä vähemmän vasemmalle puolella*/
+    align-self: stretch; 
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 30px;
 }
 .leftrow a:hover {
     text-decoration: none;
@@ -82,16 +84,17 @@ body{
     flex-direction: row;
 }
 
-/* lisäsin card1 ja card -muotoilut (että alueet ovat vierekkäin), mutta halutaanko borderia alueiden väliin? Ne on nyt kommentoitu pois käytöstä..*/
+
 .card1 {
-    flex: 1; /* tämä tarkoittaa, että alue jaetaan vasempaan ja oikeaan alueeseen*/
-  /* border: 1px solid #ccc;*/
+    flex: 1; 
+    height: 77vh;
     padding: 20 px;
     text-align: left;
+    
 }
 .card{
     flex: 1;
-    /*border: 1px solid #ccc;*/
+    height: 77vh;
     padding: 20 px;
 
 }
@@ -103,4 +106,82 @@ body{
     justify-content: space-around;
     width: 100vw;
     background-color: #6096B4;
+    position: fixed;
+    bottom: 0;
+}
+
+.computers{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+}
+
+.computers > div {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.computers img {
+    max-width: 50%;
+    height: 50%;
+}
+
+.phones{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+}
+
+.phones > div {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.phones img{
+    max-width: 50%;
+    height: 50%;
+}
+
+.televisiot{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+}
+
+.televisiot > div {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.televisiot img{
+    max-width: 50%;
+    height: 50%;
+}
+
+.price {
+    position: sticky;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: black; 
+    background-color: #3498db;
+}
+
+.product{
+    font-size: 30px;
+    font-weight: bolder;
 }
