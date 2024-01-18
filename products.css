@@ -101,6 +101,83 @@ body{
  
 
 
+
+.computers{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+}
+
+.computers > div {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.computers img {
+    max-width: 50%;
+    height: 50%;
+}
+
+.phones{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+}
+
+.phones > div {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.phones img{
+    max-width: 50%;
+    height: 50%;
+}
+
+.televisiot{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+}
+
+.televisiot > div {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.televisiot img{
+    max-width: 50%;
+    height: 50%;
+}
+
+.price {
+    position: sticky;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: black; 
+    background-color: #3498db;
+}
+
+.product{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
 .footer{
     display: flex;
     justify-content: space-around;
