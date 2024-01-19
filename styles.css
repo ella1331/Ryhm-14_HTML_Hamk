@@ -7,13 +7,20 @@ body{
     background-color: #93BFCF;
     margin-bottom: 60px; /*lisäsin tämän, että tämän verran varataan footerille sivun alareunassa*/
     height: 100%;
+    width: 100vw;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
+.header h1{
+    padding-left: 30px;
+   
+    
+}
+
 
 .header{
-    padding: 30px;
+        
     background-color: #93BFCF;
     width: 100vw;
 }
@@ -48,7 +55,7 @@ body{
     /*width: 100vw;*/
     align-items: flex-start; 
     flex-shrink: 0;
-    height: 100%;
+    height: 80vh;
    
 
 }
@@ -107,7 +114,10 @@ body{
     padding: 20 px;
    
 }
- 
+
+hr.solid {
+    border-top: 3px solid #000000;
+}
 
 
 .footer{
@@ -115,16 +125,13 @@ body{
     /*justify-content: space-around;*/
     width: 100vw;
     background-color: #6096B4;
-    position: fixed;
+    position: relative;
     bottom: 0;
     align-items: center;
    /* left: 0; lisäsin tämän, että footer on koko näytön leveydellä*/
-    height: 100px;
-    justify-content: flex-start;
+    height: 7vh;
+    justify-content: space-around;
  
 }
 
-.footer p {
-    margin: 10px; /* Voit säätää tätä tarpeesi mukaan */
-}
 
