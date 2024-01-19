@@ -121,6 +121,10 @@ body{
    /* left: 0; lisäsin tämän, että footer on koko näytön leveydellä*/
     height: 100px;
     justify-content: flex-start;
+ 
 }
 
+.footer p {
+    margin: 10px; /* Voit säätää tätä tarpeesi mukaan */
+}
 

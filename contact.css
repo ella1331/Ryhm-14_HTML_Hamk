@@ -33,16 +33,28 @@
 #nimi{
 width: 30vw;
 height: 5vh;
+border-radius: 5%;
 }
 #sukunimi{
     width: 30vw;
     height: 5vh;
+    border-radius: 5%;
 }
 #puhnro{
     width: 30vw;
     height: 5vh;
+    border-radius: 5%;
 }
 #email{
     width: 30vw;
     height: 5vh;
+    border-radius: 5%;
 }
+#nappi {
+    font-size: 15px;
+    background-color: #BDCDD6;
+    font-family: 'Shadows Into Light Two', cursive;
+    color: black;
+    border-radius: 5%;
+    
+    }
