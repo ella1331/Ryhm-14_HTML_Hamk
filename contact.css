@@ -1,9 +1,11 @@
+
+
 .alue{
     background-color: white;
     display: flex;
     flex-direction: row; 
     width: 100vw;
-    height: 77vh;
+    height: 100vh;
     align-items: flex-start;
 }
 
@@ -24,4 +26,23 @@
 
 #Tekstihomma{
     border-radius: 5%;
+    width: 30vw;
+    height: 15vh;
+}
+
+#nimi{
+width: 30vw;
+height: 5vh;
+}
+#sukunimi{
+    width: 30vw;
+    height: 5vh;
+}
+#puhnro{
+    width: 30vw;
+    height: 5vh;
+}
+#email{
+    width: 30vw;
+    height: 5vh;
 }
