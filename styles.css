@@ -1,23 +1,31 @@
 *{
     box-sizing: border-box;
 }
-
+ 
 body{
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #93BFCF;
+    margin-bottom: 60px; /*lisäsin tämän, että tämän verran varataan footerille sivun alareunassa*/
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
     padding: 30px;
     background-color: #93BFCF;
     width: 100vw;
-    
 }
 
 .nav{
     display: flex;
-    justify-content: space-around;
-    width: 100vw;
+    /*justify-content: space-around;*/
+    /*width: 100vw;*/
     background-color: #BDCDD6;
+    margin: 0;
+    justify-content: flex-start;
+    flex: none;
 }
 
 .nav a{
@@ -34,11 +42,15 @@ body{
 }
 
 .row{
-    background-color: #EEE9DA;
+    background-color: white;
     display: flex;
-    flex-direction: row; /*muutin tätä*/
-    width: 100vw;
-    align-items: flex-start; /* ja tätä*/
+    flex-direction: row; 
+    /*width: 100vw;*/
+    align-items: flex-start; 
+    flex-shrink: 0;
+    height: 100%;
+   
+
 }
 
 .leftrow a{
@@ -51,11 +63,13 @@ body{
 .leftrow{
     text-align: left;
     width: 100%;
-    align-self: stretch; /* lisäsin myös tämän, että molemmat puolet olisivat yhtä isoja, koska meillä on tekstiä vähemmän vasemmalle puolella*/
+    align-self: stretch; 
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 30px;
+    margin-left: 0;
 }
 .leftrow a:hover {
     text-decoration: none;
@@ -68,39 +82,45 @@ body{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
 }
-.laptop{
+.laptop, .phone, .tv{
     display: flex;
     flex-direction: row;
-}
-.phone{
-    display: flex;
-    flex-direction: row;
-}
-.tv{
-    display: flex;
-    flex-direction: row;
+    margin-left: 0;
 }
 
-/* lisäsin card1 ja card -muotoilut (että alueet ovat vierekkäin), mutta halutaanko borderia alueiden väliin? Ne on nyt kommentoitu pois käytöstä..*/
+
+
 .card1 {
-    flex: 1; /* tämä tarkoittaa, että alue jaetaan vasempaan ja oikeaan alueeseen*/
-  /* border: 1px solid #ccc;*/
+    flex: 1; 
+    min-height: 77vh;
+    max-width: 50%;
     padding: 20 px;
     text-align: left;
+   
 }
 .card{
     flex: 1;
-    /*border: 1px solid #ccc;*/
+    min-height: 77vh;
+    max-width: 50%;
     padding: 20 px;
-
+   
 }
  
 
 
 .footer{
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     width: 100vw;
     background-color: #6096B4;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+   /* left: 0; lisäsin tämän, että footer on koko näytön leveydellä*/
+    height: 100px;
+    justify-content: flex-start;
 }
+
+
