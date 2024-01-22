@@ -1,0 +1,61 @@
+
+
+.alue{
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-start;
+}
+
+.aukioloajat{
+    width: 50%; 
+    padding-left: 4%;
+    padding-top: 4%;
+}
+
+.lomake{
+    width: 50%;
+}
+
+#kyselylomake{
+    border-radius: 5%;
+    width: 350px;
+    height: 20px;
+}
+
+#Tekstihomma{
+    border-radius: 5%;
+    width: 30vw;
+    height: 15vh;
+}
+
+#nimi{
+width: 30vw;
+height: 5vh;
+border-radius: 5%;
+}
+#sukunimi{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5%;
+}
+#puhnro{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5%;
+}
+#email{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5%;
+}
+#nappi {
+    font-size: 15px;
+    background-color: #BDCDD6;
+    font-family: 'Shadows Into Light Two', cursive;
+    color: black;
+    border-radius: 5%;
+    
+    }

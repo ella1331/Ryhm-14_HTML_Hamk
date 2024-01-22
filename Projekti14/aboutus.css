@@ -1,0 +1,17 @@
+.area{
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-start;
+}
+
+.map{
+    padding: 120px;
+    font-size: 18px;
+}
+
+.map img{
+    float: right;
+}

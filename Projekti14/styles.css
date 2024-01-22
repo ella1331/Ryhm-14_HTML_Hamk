@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #93BFCF;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.header h1{
+    padding-left: 30px;
+    margin: 0px;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #93BFCF;
+    width: 100vw;
+    padding: 20px;
+}
+
+.social-icons {
+   margin-left: auto;
+}
+
+.social-icons img {
+    width: 3vw; /* Muuta tarvittaessa */
+    height: 5vh; /* Muuta tarvittaessa */
+    cursor: pointer;
+}
+
+
+
+.nav{
+    display: flex;
+    /*justify-content: space-around;*/
+    /*width: 100vw;*/
+    background-color: #BDCDD6;
+    margin: 0;
+    justify-content: flex-start;
+    flex: none;
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-weight: bolder;
+
+}
+
+.nav a:hover{
+    background-color: #6096B4;
+    transition: 500ms;
+}
+
+.row{
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    /*width: 100vw;*/
+    align-items: flex-start; 
+    flex-shrink: 0;
+    height: 80vh;
+   
+
+}
+
+.leftrow a{
+    padding: 15px;
+    display: block; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.leftrow{
+    text-align: left;
+    width: 100%;
+    align-self: stretch; 
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 30px;
+    margin-left: 0;
+}
+.leftrow a:hover {
+    text-decoration: none;
+}
+
+.rightrow{
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+.laptop, .phone, .tv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+
+
+.card1 {
+    flex: 1; 
+    min-height: 77vh;
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.card{
+    flex: 1;
+    min-height: 77vh;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+hr.solid {
+    width: 100%; 
+    border: none;
+    height: 3px; 
+    background-color: #BDCDD6; 
+    }
+    
+
+
+
+.footer{
+    display: flex;
+    /*justify-content: space-around;*/
+    width: 100vw;
+    background-color: #6096B4;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+   /* left: 0; lisäsin tämän, että footer on koko näytön leveydellä*/
+    height: 7vh;
+    justify-content: space-around;
+ 
+}
+
+
+
+
