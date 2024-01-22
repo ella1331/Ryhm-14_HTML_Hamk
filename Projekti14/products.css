@@ -1,151 +1,8 @@
 
-.row{
-    background-color: white;
-    display: flex;
-    flex-direction: row; 
-    width: 100vw;
-    align-items: flex-start; 
-    display: flex;
-}
-
-.leftrow a{
-    padding: 15px;
-    display: block; 
-    text-decoration: none; 
-    color: black; 
-}
-
-.leftrow{
-    text-align: left;
-    width: 100%;
-    align-self: stretch; 
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 30px;
-}
-.leftrow a:hover {
-    text-decoration: none;
-}
-
-.rightrow{
-    width: 100%;
-    align-self: stretch;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-.laptop{
-    display: flex;
-    flex-direction: row;
-}
-.phone{
-    display: flex;
-    flex-direction: row;
-}
-.tv{
-    display: flex;
-    flex-direction: row;
-}
-
-
-.card1 {
-    flex: 1; 
-    height: 77vh;
-    padding: 20 px;
-    text-align: left;
-    
-}
-.card{
-    flex: 1;
-    height: 77vh;
-    padding: 20 px;
-
-}
  
-
-.computers{
-    width: 100%;
-    align-self: stretch;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: white;
-}
-
-.computers > div {
-    flex: 1;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-.computers img {
-    max-width: 50%;
-    height: 50%;
-}
-
-.phones{
-    width: 100%;
-    align-self: stretch;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: white;
-}
-
-.phones > div {
-    flex: 1;
-    margin: 10px;
-    box-sizing: border-box;
-}
-.phones img{
-    max-width: 50%;
-    height: 50%;
-}
-
-.televisiot{
-    width: 100%;
-    align-self: stretch;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: white;
-}
-
-.televisiot > div {
-    flex: 1;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-.televisiot img{
-    max-width: 50%;
-    height: 50%;
-}
-
-.price {
-    position: sticky;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 30px;
-    color: black; 
-    background-color: #3498db;
-    align-self: flex-start;
-}
-
-
-
-
-
 .product{
     font-size: 30px;
     font-weight: bolder;
-
 }
 
 @media only screen and (max-width: 620px) {
@@ -154,4 +11,44 @@
     }
 }
 
+.tuote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /*padding: 20px;*/
+    background-color: white;
+    flex-direction: row; 
+    width: auto;
+    height: auto;
+}
+
+.tuote hr{
+    margin: 0% 5% 0%;
+}
+
+.tuote .product-container {
+    flex: 1;
+    text-align: center;
+}
+
+.product-container img {
+    max-width: 45%;
+    height: auto;
+}
+
+.price{
+    font-size: 26px;
+}
+
+.otsikko{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    flex-direction: row; 
+   
+}
 
