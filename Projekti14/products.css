@@ -113,7 +113,10 @@
     .otsikko {
         flex-direction: column;
         align-items: center;
-    
     }
+
+    .category a{
+        border: solid #BDCDD6 2px;  
+     }
 }
 
