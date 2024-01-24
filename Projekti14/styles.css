@@ -279,7 +279,19 @@ hr.solid {
 
     .category a{
         border: solid #BDCDD6 2px;  
-     }
+    }
+
+    .laptop{
+        align-items: center;
+    }
+
+    .phone{
+        align-items: center;
+    }
+
+    .tv{
+        align-items: center;
+    }
 }
 
 
