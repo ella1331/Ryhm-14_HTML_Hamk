@@ -12,7 +12,6 @@ body{
     flex-direction: column;
 }
 .header h1{
-    padding-left: 30px;
     margin: 0px;
     
 }
@@ -22,25 +21,12 @@ body{
     align-items: center;    
     background-color: #93BFCF;
     max-width: 100vw;
-    padding: 20px;
+    padding: 1%;
 }
-
-.social-icons {
-   margin-left: auto;
-}
-
-.social-icons img {
-    width: 3vw; /* Muuta tarvittaessa */
-    height: 5vh; /* Muuta tarvittaessa */
-    cursor: pointer;
-}
-
 
 
 .nav{
     display: flex;
-    /*justify-content: space-around;*/
-    /*width: 100vw;*/
     background-color: #BDCDD6;
     margin: 0;
     justify-content: flex-start;
@@ -67,7 +53,6 @@ body{
     align-items: flex-start; 
     flex-shrink: 0;
     min-height: 80vh;
-   
 
 }
 
@@ -88,6 +73,8 @@ body{
 
 .category img{
     margin-top: 6%;
+    height: 40vh; 
+    width:35vw;
 }
 
 .leftrow{
@@ -98,7 +85,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 30px;
+    font-size: 3vh;
     margin-left: 0;
 }
 .leftrow a:hover {
@@ -112,21 +99,33 @@ body{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
+    font-size: 2vh;
 }
 
 .rightrow h2{
     border-bottom: solid 4px #BDCDD6;
     padding-left: 19%;
-
+    font-size: 3vh;
 }
 .laptop, .phone, .tv{
     display: flex;
     flex-direction: row;
     margin-left: 0;
+    font-size: 2vh;
+}
+#laptop1{
+    width: 15vw; 
+    height: 15vh; 
 }
 
-
+#phone1{
+    width: 15vw; 
+    height: 15vh; 
+}
+#tv1{
+    width: 15vw; 
+    height: 15vh; 
+}
 
 .card1 {
     flex: 1; 
@@ -155,42 +154,129 @@ hr.solid {
 
 
 
-.footer{
+.footer-content {
     display: flex;
-    /*justify-content: space-around;*/
     max-width: 100vw;
     background-color: #6096B4;
     position: relative;
     bottom: 0;
     align-items: center;
-   /* left: 0; lisäsin tämän, että footer on koko näytön leveydellä*/
     height: 7vh;
     justify-content: space-around;
- 
+
 }
 
 .social-icons {
     margin-left: auto;
- }
- 
- .social-icons img {
-     width: 3vw; /* Muuta tarvittaessa */
-     height: 5vh; /* Muuta tarvittaessa */
-     cursor: pointer;
-     opacity: 0.5;
- }
- .social-icons img:hover {
-     opacity: 1.0;
-   }
+    padding-right: 5vh;
+}
+
+.social-icons img {
+    width: 3vw; 
+    height: 5vh; 
+    cursor: pointer;
+    opacity: 0.5;
+}
+.social-icons img:hover {
+    opacity: 1.0;
+}
 
 
 .korostettu-sana{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 3vh;
 }
 
-@media only screen and (max-width: 620px) {
-    .row .card1 .leftrow .rightrow .card {
-        flex: 100%;
+@media screen and (max-width: 1200px) {
+    .row .leftrow a, .footer,
+    .row .rightrow {
+        width: 100%;
+    }
+
+    .laptop,
+    .phone,
+    .tv {
+        flex-direction: column;
+    }
+   
+    
+
+    .card1,
+    .card {
+        max-width: 100%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .leftrow,
+    .row .leftrow,
+    .row .rightrow {
+        width: 100%;
+        hyphens: auto;
+        text-align: center; 
+    }
+
+    hr.solid {
+        width: 100%;
+    }
+
+    .card1,
+    .card {
+        max-width: 100%;
+        hyphens: auto;
+    }
+
+    .phone p {
+        hyphens: manual;
+        word-wrap: break-word;
+    }
+
+    .category a {
+        border: none;
+    }
+
+    #laptop1,
+    #phone1,
+    #tv1 {
+        width: 9vh;
+        height: 9vh;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: block;
+        background-color: #93BFCF;
+    }
+
+    .footer-content p {
+        margin: 5px 0;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rightrow h2 {
+       text-align: left;
+    }
+
+    .category img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+

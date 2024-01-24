@@ -1,6 +1,4 @@
-
-
-.alue{
+.alue {
     background-color: white;
     display: flex;
     flex-direction: row; 
@@ -9,59 +7,75 @@
     align-items: flex-start;
 }
 
-.aukioloajat{
+.aukioloajat {
     width: 50%; 
     padding-left: 4%;
     padding-top: 4%;
+    /*position: relative;  LISÄÄ TÄMÄ JOS MUUTETAAN KUVA TAKAISIN VASEMMALLE*/
 }
 
-.lomake{
+/* LISÄÄ NÄMÄ JOS KUVA VASEMMALLE
+.aukioloajat img#asiakaspalvelija {
+    max-width: 100%;  
+    height: auto;  Lisätty height: auto; 
+    position: absolute;
+    left: 0; 
+   
+}
+*/
+
+.lomake {
     width: 50%;
 }
 
-#kyselylomake{
+#kyselylomake {
     border-radius: 5%;
-    width: 350px;
-    height: 20px;
+    width: 80%; 
 }
 
-#Tekstihomma{
+#tekstihomma {
     border-radius: 5%;
-    width: 30vw;
-    height: 15vh;
+    width: 100%; 
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-#nimi{
-width: 30vw;
-height: 5vh;
-border-radius: 5%;
-}
-#sukunimi{
-    width: 30vw;
+#nimi, #sukunimi, #puhelinnumero, #email {
+    width: 100%;
     height: 5vh;
     border-radius: 5%;
 }
-#puhnro{
-    width: 30vw;
-    height: 5vh;
-    border-radius: 5%;
-}
-#email{
-    width: 30vw;
-    height: 5vh;
-    border-radius: 5%;
-}
+
 #nappi {
     font-size: 15px;
     background-color: #BDCDD6;
     font-family: 'Shadows Into Light Two', cursive;
     color: black;
     border-radius: 5%;
-    
+}
+
+
+@media screen and (max-width: 1200px) {
+    .alue .aukioloajat,
+    .alue .lomake {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .aukioloajat img#asiakaspalvelija{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .alue {
+        flex-direction: column;
+        padding-bottom: 20px;
     }
 
-@media only screen and (max-width: 620px) {
-    .alue .lomake {
-            flex: 100%;
+    .aukioloajat,
+    .lomake {
+        width: 100%;
+    }
+    .aukioloajat img#asiakaspalvelija{
+        width: 50%;
     }
 }

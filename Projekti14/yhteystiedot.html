@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
 
-<title>TeknoTukku</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>TeknoTukku</title>
 </head>
 
 <body>
     <div class="header" id="otsikko">
-      <h1>TeknoTukku</h1>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com" target="_blank">
-        <img src="https://cdn.pixabay.com/photo/2018/05/08/18/25/facebook-3383596_960_720.png" alt="Facebook"></a> 
+        <h1>TeknoTukku</h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/18/25/facebook-3383596_960_720.png" alt="Facebook">
+            </a>
         </div>
-    </div>  
+    </div>
 
     <div class="nav" id="navigointi">
         <a href="index.html"> Etusivu</a>
@@ -29,52 +32,45 @@
         <a href="yhteystiedot.html"> Yhteystiedot</a>
         <a href="aboutus.html"> Tietoa meistä</a>
     </div>
-    
-    <div class="alue">
-    <div class="aukioloajat">
-        <p>Aukioloajat 9-18</p>
-        <p>ChatBot auki 24/7</p>
-        <p>Vastaamme puheluihin 10-17</p>
-        
-        
-        <img id="asiakaspalvelija" alt="aspa" style="width: 
-        30vw; height: 35vh;" src="https://www.lianatech.fi/media/international-pictures/news/cache/tarkista_nama_10_kohdan_muistilista_hyva-cc-88a-cc-88n_verkkoasiakaspalveluun_cover-1200x628.png">
-    </div>
 
-    
-    <div class="lomake">
-        <form id="kyselylomake">
-            <h2>Palaute</h2>
-            <p>Voit halutessa ottaa yhteyttä tai antaa palautetta myös lomakkeen kautta.</p>
-            <label for="nimi">Nimi</label><br>
-            <input type="text" name="text" id="nimi" placeholder="Kirjoita etunimesi"><br><br>
-            <label for="sukunimi">Sukunimi</label><br>
-            <input type="text" name="text" id="sukunimi" placeholder="Kirjoita sukunimesi"><br><br>
-            <label for="puhelinnumero">Puhnro</label><br>
-            <input type="text" name="text" id="puhelinnumero" placeholder="Kirjoita puhelinnumerosi"><br><br>
-            <label for="email">Email</label><br>
-            <input type="text" name="text" id="email" placeholder="Kirjoita sähköpostisi"><br><br>
-            
-            <p>Kirjoita viestisi tähän</p>
-            <textarea name="Tekstihomma" id="Tekstihomma" cols="30" rows="10" placeholder="Kirjoita viestisi tähän"></textarea>
-            <br><br>
-            <input type="button" id="nappi" value="Lähetä">
-            
+    <div class="alue">
+        <div class="aukioloajat">
+            <p>Aukioloajat 9-18</p>
+            <p>ChatBot auki 24/7</p>
+            <p>Vastaamme puheluihin 10-17</p>
+            <img id="asiakaspalvelija" alt="aspa" src="https://www.lianatech.fi/media/international-pictures/news/cache/tarkista_nama_10_kohdan_muistilista_hyva-cc-88a-cc-88n_verkkoasiakaspalveluun_cover-1200x628.png">
+        </div>
+
+        <div class="lomake">
+            <form id="kyselylomake">
+                <h2>Palaute</h2>
+                <p>Voit halutessa ottaa yhteyttä tai antaa palautetta myös lomakkeen kautta.</p>
+                <label for="nimi" style="font-weight: bold;">Nimi</label><br>
+                <input type="text" name="nimi" id="nimi" placeholder="Kirjoita etunimesi"><br><br>
+                <label for="sukunimi" style="font-weight: bold;">Sukunimi</label><br>
+                <input type="text" name="sukunimi" id="sukunimi" placeholder="Kirjoita sukunimesi"><br><br>
+                <label for="puhelinnumero" style="font-weight: bold;">Puhnro</label><br>
+                <input type="text" name="puhelinnumero" id="puhelinnumero" placeholder="Kirjoita puhelinnumerosi"><br><br>
+                <label for="email" style="font-weight: bold;">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Kirjoita sähköpostisi"><br><br>
+                
+                <p style="font-weight: bold;">Kirjoita viestisi tähän</p>
+                <textarea name="tekstihomma" id="tekstihomma" cols="30" rows="8" placeholder="Kirjoita viestisi tähän"></textarea>
+                <br><br><br>
+                <input type="button" id="nappi" value="Lähetä">
             </form>
-            
-   
         </div>
-        </div>
-   
+    </div>
 
     <div class="footer">
-    <p>TeknoTukku</p>
-    <p>Liiruminkuja 65, 9950 Kouvola</p>
-    <p>teknotukku@liirum.com
-    <a href="mailto:teknotukku@liirum.com" style="font-size:35px">&#128231;</a></p>
-    <p><a href="#otsikko" style="color: black; text-decoration: none;">Takaisin ylös</a></p>
+        <div class="footer-content">
+            <p>TeknoTukku</p>
+            <p>Liiruminkuja 65, 9950 Kouvola</p>
+            <p>teknotukku@liirum.com
+                <a href="mailto:teknotukku@liirum.com" style="font-size: 3vh;">&#128231;</a>
+            </p>
+            <p><a href="#otsikko" style="color: black; text-decoration: none;">Takaisin ylös</a></p>
+        </div>
     </div>
-
-    
 </body>
 </html>
