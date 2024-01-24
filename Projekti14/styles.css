@@ -276,6 +276,10 @@ hr.solid {
         height: auto;
         max-width: 100%;
     }
+
+    .category a{
+        border: solid #BDCDD6 2px;  
+     }
 }
 
 
